@@ -2,10 +2,10 @@
 
 
 REMOTE_ACCOUNT=python
-REMOTE_IP=192.168.203.140
+REMOTE_IP=xxx.xxx.xxx.xxx
 REMOTE_DIR=/home/python/Desktop
 
-LOCAL_DIR=${HOME}/Desktop/sz21/day03
+LOCAL_DIR=${HOME}/Desktop/xxx/xxx
 
 LOCK_FILE=/tmp/deploy.pid
 
