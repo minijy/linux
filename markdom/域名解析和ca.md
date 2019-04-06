@@ -12,7 +12,7 @@
 
 ![](.\image\201711051509883869899454.png)
 
-![201711051509884252873592 - 副本](.\image\201711051509884252873592 - 副本.png)
+![201711051509884252873592](https://github.com/minijy/linux/blob/master/markdom/image/201711051509884252873592.png)
 
 
 
@@ -26,11 +26,11 @@
 
 ##### 登录你的服务器管理面板，我们来绑定域名。如下图所示，这里不多做介绍。 
 
-![201711051509884349350882](C:\Users\Administrator\Desktop\image\201711051509884349350882.png)
+![201711051509884349350882](https://github.com/minijy/linux/blob/master/markdom/image/201711051509884349350882.png)
 
 
 
-![201711051509884349183452](.\image\201711051509884349183452.png)
+![201711051509884349183452](https://github.com/minijy/linux/blob/master/markdom/image/201711051509884349183452.png)
 
 域名绑定总得来说，就是在域名的设置里把域名指向你主机的IP地址，在主机里再给域名做一个指向就可以了。就像两条电级，连接上了就可以通电了。 
 
@@ -89,7 +89,7 @@ cp -r YourDomainName.key /etc/apache2/ssl
 sudo a2enmod ssl
 ```
 
-![155177668736989_zh-CN](.\image\155177668736989_zh-CN.png)
+![155177668736989_zh-CN](https://github.com/minijy/linux/blob/master/markdom/image/155177668736989_zh-CN.png)
 
 SSL模块启用后可执行`ls /etc/apache2/sites-available`查看目录下生成的default-ssl.conf文件。 
 
@@ -118,7 +118,7 @@ SSLCertificateChainFile /etc/apache2/www.YourDomainName.com_chain.crt
 #将/etc/apache2/www.YourDomainName.com_chain.crt替换为证书链文件路径+证书链文件名。
 ```
 
-![155177668736991_zh-CN](.\image\155177668736991_zh-CN.png)
+![155177668736991_zh-CN](https://github.com/minijy/linux/blob/master/markdom/image/155177668736991_zh-CN.png)
 
 /sites-available：该目录存放的是可用的虚拟主机；/sites-enabled：该目录存放的是已经启用的虚拟主机。 
 
@@ -138,7 +138,7 @@ sudo ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enab
 sudo /etc/init.d/apache2 force-reload
 ```
 
-![155177668736992_zh-CN](.\image\155177668736992_zh-CN.png)
+![155177668736992_zh-CN](https://github.com/minijy/linux/blob/master/markdom/image/155177668736992_zh-CN.png)
 
 运行以下命令重启Apache 2服务。 
 
@@ -146,7 +146,7 @@ sudo /etc/init.d/apache2 force-reload
 sudo /etc/init.d/apache2 restart
 ```
 
-![155177668736993_zh-CN](.\image\155177668736993_zh-CN.png)
+![155177668736993_zh-CN](https://github.com/minijy/linux/blob/master/markdom/image/155177668736993_zh-CN.png)
 
 
 
