@@ -154,7 +154,7 @@ python setup.py install
 
 ​	
 
-**拓展知识点：**	
+**拓展 ：**	
 
 ​	python类型软件的安装流程
 
@@ -318,7 +318,7 @@ make install
 
  
 
-**拓展知识点：**
+**拓展 ：**
 
 linux中软件安装的一般流程
 
@@ -630,7 +630,7 @@ http {
 
    
      server {
-         listen  8001;
+         listen  8080;
          server_name api.demo.site;
 
          location / {
@@ -656,11 +656,6 @@ http {
 
          #access_log  logs/host.access.log  main;
          location /xadmin {
-             include uwsgi_params;
-             uwsgi_pass demo;
-         }
-
-         location /ckeditor {
              include uwsgi_params;
              uwsgi_pass demo;
          }
@@ -699,10 +694,6 @@ http {
 
 /data/server/nginx/sbin/nginx -s reload
 ```
-
-
-
-
 
 
 
